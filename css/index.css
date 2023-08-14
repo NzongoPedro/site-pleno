@@ -1,4 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url(./theme.css);
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Roboto&display=swap');
 
  body {
      font-family: "Nunito", sans-serif;
@@ -91,18 +93,16 @@
  }
 
  .main {
-     margin-top: 7% !important;
+     margin-top: -4% !important;
+ }
+
+ .main .div {
+     background: url(../images/fundo.png);
  }
 
  .card-esquerda {
      /*   background: #fc6404;#FF6100;*/
-     background:
-         url(../images/fundo.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     background-attachment: scroll;
-
+     cursor: pointer;
      padding: 18px !important;
 
  }
@@ -111,7 +111,7 @@
      font-family: "Nunito", sans-serif;
      font-size: 16px !important;
      margin-top: 15px !important;
-     color: #fbfbfb;
+     color: #1a1a1a;
      font-weight: bold !important;
      bottom: 20px;
  }
@@ -119,11 +119,12 @@
  .card-esquerda .card-texto {
      margin: auto;
      margin-top: 20px;
+     color: #1a1a1a;
  }
 
  .card-esquerda .ao {
      background-color: #1a1a1a;
-     color: white;
+     color: #fff;
      font-size: 1.2em;
      border-radius: 4px;
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -134,7 +135,7 @@
 
  .card-esquerda .texto span {
      font-family: "Raleway", sans-serif;
-     color: #fbfbfb !important;
+     color: #1a1a1a !important;
      font-size: 38px;
      text-align: left;
      top: 0;
@@ -153,7 +154,7 @@
      font-weight: bold;
      top: 0;
      left: 0;
-     color: #fcfcfc;
+     color: #1a1a1a;
  }
 
  .btn-dominio {
@@ -162,7 +163,7 @@
      cursor: pointer;
      transition: 0.5s;
      font-weight: bold;
-     color: #ff6100;
+     color: #1a1a1a;
      padding: 4px;
      background: #fff !important;
  }
@@ -189,7 +190,7 @@
  }
 
  .card-esquerda .footer p {
-     color: #fbfbfb;
+     color: #1a1a1a;
      font-size: 14px;
      font-weight: bold;
      font-family: "Domine" sans-serif;
@@ -303,4 +304,33 @@
      background: #f7f7f7;
      height: 5px;
      margin-top: 4px;
+ }
+
+ .hero-2 {}
+
+ .hero-2 .capa {
+     width: 100%;
+     padding: auto;
+     display: flex;
+     justify-content: end;
+     align-items: end;
+     align-content: end;
+     margin-top: 15%;
+ }
+
+ .hero-2 .capa picture img {
+     max-width: 100%;
+     transform: scale(1.4);
+ }
+
+ .carta-info .card-body .card-title {
+     font-family: "Raleway", sans-serif;
+     color: #1a1a1a;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+
+ .linha-hero {
+     background: url(../images/fundo.png);
+     margin-bottom: 0 !important;
  }
