@@ -1,0 +1,216 @@
+ body {
+     font-family: "Nunito", sans-serif;
+ }
+
+ .card-esquerda {
+     /*   background: #fc6404;#FF6100;*/
+     background:
+         url(../images/fundo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: scroll;
+     backdrop-filter: 20px;
+     padding: 18px !important;
+
+ }
+
+ .card-esquerda .card-title h5 {
+     font-family: "Nunito", sans-serif;
+     font-size: 16px !important;
+     margin-top: 15px !important;
+     color: #fbfbfb;
+     font-weight: bold !important;
+     bottom: 20px;
+ }
+
+ .card-esquerda .card-texto {
+     margin: auto;
+     margin-top: 20px;
+ }
+
+ .card-esquerda .ao {
+     background-color: #1a1a1a;
+     color: white;
+     font-size: 1.2em;
+     border-radius: 4px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s ease-in-out;
+     width: 35px !important;
+     padding: 1px;
+ }
+
+ .card-esquerda .texto span {
+     font-family: "Raleway", sans-serif;
+     color: #fbfbfb !important;
+     font-size: 38px;
+     text-align: left;
+     top: 0;
+     line-height: 1;
+     display: block !important;
+ }
+
+ .card-esquerda .texto small {
+     font-size: 14px !important;
+     margin-right: 4px;
+ }
+
+ .card-esquerda .texto-info {
+     margin-top: 10px;
+     font-family: "Nunito", sans-serif;
+     font-weight: bold;
+     top: 0;
+     left: 0;
+     color: #fcfcfc;
+ }
+
+ .btn-dominio {
+     font-family: "Nunito", sans-serif;
+     position: relative;
+     cursor: pointer;
+     transition: 0.5s;
+     font-weight: bold;
+     color: #ff6100;
+     padding: 4px;
+     background: #fff !important;
+ }
+
+ .btn-dominio::before {
+     position: absolute;
+     right: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     margin-right: 5%;
+ }
+
+ .btn-dominio:hover {
+     color: #fff;
+     background: #1b1b1b !important;
+     border: #1b1b1b solid 1px;
+ }
+
+ .btn-dominio:hover::before {
+     opacity: 1;
+     transition: 0.5s;
+ }
+
+ .card-esquerda .footer p {
+     color: #fbfbfb;
+     font-size: 14px;
+     font-weight: bold;
+     font-family: "Domine" sans-serif;
+ }
+
+ .card-direita {
+     background-image: url(https://placecage.com/100/180),
+         linear-gradient(45deg, rgba(255, 255, 0.6) 0%, #f0f 20%);
+ }
+
+ .card-direita .card-title h5 {
+     font-family: "Nunito", sans-serif;
+     font-size: 16px !important;
+     margin-top: 15px !important;
+     color: #1a1a1a;
+     font-weight: bold !important;
+     bottom: 20px;
+ }
+
+ .foto-lateral img {
+     max-width: 100%;
+     height: 68vh;
+ }
+
+
+ .info {
+     color: #ff6100;
+     display: grid;
+
+     position: relative;
+     top: 0;
+     left: 0;
+     cursor: pointer;
+     background: #fff;
+     box-shadow: 4px 4px 10px rgba(233, 137, 73, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.5);
+     transition: transform ease-in .5s;
+     width: 100%;
+     margin-bottom: 50px;
+ }
+
+ .info:hover {
+     color: #fbfbfb;
+     position: relative;
+     top: 0;
+     left: 0;
+     cursor: pointer;
+     background:
+         url(../images/fundo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: scroll;
+     backdrop-filter: 20px;
+     transform: translateY(-10px);
+     transition: transform ease-out .5s;
+     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.5);
+ }
+
+ .info .icone {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+ }
+
+ .info .icone img {
+     max-width: 100%;
+     margin: auto;
+     object-position: center top;
+     object-fit: cover;
+     width: 70px;
+     padding: 2px 3px;
+ }
+
+ .info .info-titulo {
+     display: flex;
+     justify-content: space-evenly;
+     align-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 1px;
+ }
+
+ .info .info-titulo h5 {
+     font-size: 16px;
+     text-transform: uppercase;
+     padding: 1px;
+     font-weight: bold;
+     margin-top: 12px;
+
+ }
+
+ .info p {
+     text-align: center;
+ }
+
+ .info p span i {
+     display: none;
+ }
+
+ .info:hover p span i {
+     display: inline !important;
+ }
+
+
+ .traco {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     margin: auto;
+     width: 50px;
+     border-radius: 10px;
+     background: #f7f7f7;
+     height: 5px;
+     margin-top: 4px;
+ }
