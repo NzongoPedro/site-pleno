@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
  body {
      font-family: "Nunito", sans-serif;
      scroll-behavior: smooth;
@@ -15,6 +17,41 @@
      max-width: 100%;
      padding: 0;
      transform: scale(1.9);
+ }
+
+ .navegacao .menu-nav {
+     display: flex;
+     justify-content: space-between;
+     /* Espaçamento igual entre os itens do menu */
+     flex-direction: row;
+     flex-flow: row;
+ }
+
+ .navegacao .menu-nav a {
+     display: inline-block;
+     margin-right: 20px;
+     text-decoration: none;
+     color: #000;
+     transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
+     /* Adicionado efeito de transição para a cor da borda inferior e padding */
+     font-family: 'Roboto', sans-serif;
+     position: relative;
+     padding-bottom: 5px;
+     /* Espaçamento padrão entre o texto e a borda de baixo */
+     border-bottom: 2px solid transparent;
+     /* Definindo uma borda transparente inicialmente */
+     text-transform: capitalize !important;
+     font-weight: bold;
+     font-size: 18px;
+     font-variant: normal;
+ }
+
+ .navegacao .menu-nav a:hover {
+     color: #ff6600;
+     border-bottom-color: #ff6600;
+     /* Definindo a cor da borda ao passar o cursor */
+     padding-bottom: 2px;
+     /* Aumentando o espaçamento inferior ao passar o cursor */
  }
 
  .hero {
