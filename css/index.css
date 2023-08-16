@@ -1,16 +1,21 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
  @import url(./theme.css);
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 
  body {
      font-family: "Nunito", sans-serif;
      scroll-behavior: smooth;
  }
 
+ .f-roboto {
+     font-family: "roboto", sans-serif
+ }
+
  .navegacao {
      transition: ease-in-out 0.5s;
      background: #fff;
-     border-bottom: #ff6100 2px solid;
+     /* border-bottom: #ff6100 2px solid; */
  }
 
  .navegacao .container a.navbar-brand img {
@@ -36,16 +41,15 @@
      color: #000;
      transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
      /* Adicionado efeito de transição para a cor da borda inferior e padding */
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Public Sans', sans-serif !important;
      position: relative;
      padding-bottom: 5px;
      /* Espaçamento padrão entre o texto e a borda de baixo */
      border-bottom: 2px solid transparent;
      /* Definindo uma borda transparente inicialmente */
      text-transform: capitalize !important;
-     font-weight: bold;
-     font-size: 18px;
      font-variant: normal;
+     font-weight: inherit;
  }
 
  .navegacao .menu-nav a:hover {
@@ -68,6 +72,32 @@
      transition: background-position 0.5s ease-in-out;
      position: relative;
      overflow: hidden;
+ }
+
+ main.main-dominios {
+     background: url(../images/fundo.png);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: 100%;
+     background-attachment: fixed;
+     height: 100vh;
+     width: 100%;
+     transition: background-position 0.5s ease-in-out;
+     position: relative;
+     overflow: hidden;
+ }
+
+ main.main-dominios .dominio {
+     display: flex;
+     flex: 0 0 auto;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     margin: auto;
+     margin-top: 15%;
+
  }
 
 
@@ -93,7 +123,7 @@
  }
 
  .main {
-     margin-top: -4% !important;
+     margin-top: 6% !important;
  }
 
  .main .div {
@@ -104,6 +134,11 @@
      /*   background: #fc6404;#FF6100;*/
      cursor: pointer;
      padding: 18px !important;
+     background: url(../images/fundo.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: scroll;
 
  }
 
@@ -111,7 +146,7 @@
      font-family: "Nunito", sans-serif;
      font-size: 16px !important;
      margin-top: 15px !important;
-     color: #1a1a1a;
+     color: #fff;
      font-weight: bold !important;
      bottom: 20px;
  }
@@ -119,7 +154,7 @@
  .card-esquerda .card-texto {
      margin: auto;
      margin-top: 20px;
-     color: #1a1a1a;
+     color: #fff;
  }
 
  .card-esquerda .ao {
@@ -135,7 +170,7 @@
 
  .card-esquerda .texto span {
      font-family: "Raleway", sans-serif;
-     color: #1a1a1a !important;
+     color: #fff !important;
      font-size: 38px;
      text-align: left;
      top: 0;
@@ -154,7 +189,7 @@
      font-weight: bold;
      top: 0;
      left: 0;
-     color: #1a1a1a;
+     color: #fff;
  }
 
  .btn-dominio {
@@ -190,7 +225,7 @@
  }
 
  .card-esquerda .footer p {
-     color: #1a1a1a;
+     color: #fff;
      font-size: 14px;
      font-weight: bold;
      font-family: "Domine" sans-serif;
@@ -331,6 +366,6 @@
  }
 
  .linha-hero {
-     background: url(../images/fundo.png);
+     background: #f7f7f7;
      margin-bottom: 0 !important;
  }
