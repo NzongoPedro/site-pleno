@@ -373,3 +373,58 @@
      background: #f7f7f7;
      margin-bottom: 0 !important;
  }
+
+ /* section planos */
+
+ section.planos {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding: auto;
+ }
+
+ .planos .titulo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     flex-direction: column;
+     flex: 0 0 auto;
+     margin-bottom: 20px;
+ }
+
+ .planos .titulo h5 {
+     font-size: 34px;
+     margin-top: 50px;
+     font-weight: normal;
+     font-family: 'DM Sans', sans-serif;
+     color: #484848;
+ }
+
+ .planos .card {
+     margin-top: 20px !important;
+ }
+
+ .planos .card .card-body .card-title {
+     text-align: center;
+     padding: 5px;
+     color: #333;
+     font-family: 'DM Sans', sans-serif;
+     margin-top: 1.5rem;
+     font-weight: bold;
+     font-size: 21px;
+     text-transform: uppercase;
+ }
+
+ .planos .card .card-body .min-texto {
+     text-align: center !important;
+     font-size: 14px;
+     margin-top: -10px;
+ }
+
+ .planos .preco-planos {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     padding: 4px;
+ }
