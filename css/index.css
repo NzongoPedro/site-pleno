@@ -2,13 +2,15 @@
  @import url(./theme.css);
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Roboto&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
 
  input {
      box-shadow: none !important;
  }
 
  body {
-     font-family: "Nunito", sans-serif;
+     font-family: 'DM Sans', sans-serif !important;
      scroll-behavior: smooth;
  }
 
@@ -45,7 +47,7 @@
      color: #000;
      transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
      /* Adicionado efeito de transição para a cor da borda inferior e padding */
-     font-family: 'Public Sans', sans-serif !important;
+     font-family: 'DM Sans', sans-serif !important;
      position: relative;
      padding-bottom: 5px;
      /* Espaçamento padrão entre o texto e a borda de baixo */
@@ -53,7 +55,7 @@
      /* Definindo uma borda transparente inicialmente */
      text-transform: capitalize !important;
      font-variant: normal;
-     font-weight: inherit;
+     font-weight: 300;
  }
 
  .navegacao .menu-nav a:hover {
@@ -147,7 +149,7 @@
  }
 
  .card-esquerda .card-title h5 {
-     font-family: "Nunito", sans-serif;
+     font-family: 'DM Sans', sans-serif !important;
      font-size: 16px !important;
      margin-top: 15px !important;
      color: #fff;
@@ -241,7 +243,7 @@
  }
 
  .card-direita .card-title h5 {
-     font-family: "Nunito", sans-serif;
+     font-family: 'DM Sans', sans-serif !important;
      font-size: 16px !important;
      margin-top: 15px !important;
      color: #1a1a1a;
@@ -412,13 +414,14 @@
      margin-top: 1.5rem;
      font-weight: bold;
      font-size: 21px;
-     text-transform: uppercase;
+     text-transform: capitalize;
  }
 
  .planos .card .card-body .min-texto {
      text-align: center !important;
      font-size: 14px;
      margin-top: -10px;
+     font-weight: 400;
  }
 
  .planos .preco-planos {
@@ -426,5 +429,81 @@
      justify-content: center;
      align-content: center;
      align-items: center;
+     flex-flow: column;
+     flex-wrap: wrap;
      padding: 4px;
+ }
+
+ .planos .preco-planos h5 {
+     font-size: 40px;
+     margin-top: 30px;
+     font-weight: 600;
+ }
+
+ .planos .preco-planos h5 span {
+     font-size: 14px;
+ }
+
+ .planos .preco-planos h6 {
+     font-size: 16px;
+     font-weight: bold;
+     text-transform: uppercase;
+     margin: auto;
+     padding-top: 4px;
+ }
+
+ .planos .botao-plano {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ .planos .botao-plano button {
+     background: hsl(23, 100%, 48%);
+     color: #fff;
+     font-weight: 300;
+     font-size: 14px;
+     border-radius: 4px !important;
+     -webkit-border-radius: 4px !important;
+     -moz-border-radius: 4px !important;
+     -ms-border-radius: 4px !important;
+     -o-border-radius: 4px !important;
+ }
+
+ .planos .botao-plano button:hover {
+     background: #ff6600;
+     color: #fff;
+     font-weight: 500;
+ }
+
+ .planos .oferta-plano {
+     font-size: 12px;
+     font-weight: 100;
+     margin: auto;
+     color: #484848;
+     text-align: center;
+     padding: 8px;
+     margin-top: 8px;
+ }
+
+ .planos .planos-recursos {
+     margin-top: 4px;
+     position: relative;
+     margin-bottom: 4px;
+ }
+
+ .planos .planos-recursos h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+     font-size: 14px;
+     font-weight: 700;
+     top: 0;
+     left: 0;
+ }
+
+ .planos .planos-recursos ul li {
+     border: 0 !important;
+     font-weight: 500;
  }
